@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mdx-labs/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/mdx-labs/static/js/main.a7000a79.chunk.js",
+    "main.js.map": "/mdx-labs/static/js/main.a7000a79.chunk.js.map",
+    "runtime-main.js": "/mdx-labs/static/js/runtime-main.f62224e9.js",
+    "runtime-main.js.map": "/mdx-labs/static/js/runtime-main.f62224e9.js.map",
+    "static/js/2.4d7e5b69.chunk.js": "/mdx-labs/static/js/2.4d7e5b69.chunk.js",
+    "static/js/2.4d7e5b69.chunk.js.map": "/mdx-labs/static/js/2.4d7e5b69.chunk.js.map",
+    "static/js/3.0176178e.chunk.js": "/mdx-labs/static/js/3.0176178e.chunk.js",
+    "static/js/3.0176178e.chunk.js.map": "/mdx-labs/static/js/3.0176178e.chunk.js.map",
+    "index.html": "/mdx-labs/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/mdx-labs/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.4d7e5b69.chunk.js.LICENSE.txt": "/mdx-labs/static/js/2.4d7e5b69.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f62224e9.js",
+    "static/js/2.4d7e5b69.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.a7000a79.chunk.js"
+  ]
+}
