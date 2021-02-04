@@ -1,0 +1,38 @@
+// import { createCompiler } from '@mdx-js/mdx'
+// import detectFrontmatter from 'remark-frontmatter'
+// import vfile from 'vfile'
+// import visit from 'unist-util-visit'
+// import remove from 'unist-util-remove'
+// import yaml from 'yaml'
+
+const {createCompiler} = require('@mdx-js/mdx')
+const detectFrontmatter = require('remark-frontmatter')
+const vfile = require('vfile')
+const visit = require('unist-util-visit')
+const remove = require('unist-util-remove')
+const yaml = require('yaml')
+
+const file = vfile(`
+---
+title: Hello, MDX
+---
+I <3 Markdown and JSX
+`)
+
+function extractFrontmatter() {
+  return function transformer(tree, file) {
+    visit(tree, 'yaml', function visitor(node) {
+      file.data.frontmatter = yaml.parse(node.value)
+    })
+    remove(tree, 'yaml')
+  }
+}
+
+const mdxCompiler = createCompiler({
+  remarkPlugins: [detectFrontmatter, extractFrontmatter]
+})
+
+mdxCompiler.process(file, function done(err, file) {
+  console.log(file.data.frontmatter)
+  // { title: "Hello, MDX" }
+})
